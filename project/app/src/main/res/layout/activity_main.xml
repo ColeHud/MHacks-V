@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ff000000">
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="115dp"
+        android:id="@+id/imageButton1"
+        android:background="@drawable/green1"
+        android:contentDescription="imageButton"
+        android:layout_marginEnd="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/texttest"
+        android:layout_alignTop="@+id/imageButton1"
+        android:layout_alignParentStart="true"
+        android:background="#ffffffff"
+        android:autoText="true"
+        android:editable="false"
+        android:layout_toStartOf="@+id/imageButton1"
+        />
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="115dp"
+        android:id="@+id/imageButton2"
+        android:layout_below="@+id/imageButton1"
+        android:layout_alignEnd="@+id/imageButton1"
+        android:background="@drawable/red2" />
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="115dp"
+        android:id="@+id/imageButton3"
+        android:background="@drawable/yellow3"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignEnd="@+id/imageButton2" />
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="115dp"
+        android:id="@+id/imageButton4"
+        android:background="@drawable/blue4"
+        android:layout_below="@+id/imageButton3"
+        android:layout_alignEnd="@+id/imageButton3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="New Text"
+        android:id="@+id/myoInfo"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/imageButton4"
+        android:background="#ffffffff" />
+
+</RelativeLayout>
